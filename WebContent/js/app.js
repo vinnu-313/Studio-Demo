@@ -1,0 +1,21 @@
+'use strict';
+
+angular.module('studio', [ 'ngRoute', 'studio.controller' ]).controller(
+		'AppController', [ '$scope', function($scope) {
+
+		} ])
+
+.config([ '$routeProvider', function($routeProvider) {
+	$routeProvider.when('/fviewer', {
+		templateUrl : 'partials/fviewer.html',
+		controller : 'ViewerController'
+	}).when('/editor', {
+		templateUrl : 'partials/editor.html',
+		controller : 'EditorController'
+	}).when('/hierarchy', {
+		templateUrl : 'partials/hierarchy.html',
+		controller : 'HierarchyController'
+	}).otherwise({
+		redirectTo : '/fviewer'
+	});
+} ]);
