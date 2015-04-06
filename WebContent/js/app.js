@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('studio', [ 'ngRoute', 'studio.controller', 'studio.services', 'ui.scroll', 'ui.scroll.jqlite' ]).controller('AppController',
+angular.module('studio', [ 'ngRoute', 'studio.controller', 'studio.services', 'ui.scroll', 'ui.scroll.jqlite', 'ui.ace' ]).controller('AppController',
 		[ '$scope', function($scope) {
 			$scope.appName = "GB Studio Demo";
 		} ])

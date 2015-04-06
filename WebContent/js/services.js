@@ -15,7 +15,7 @@ angular.module('studio.services', [])
                       url : 'http://gbs.glassbeam.com:9000/readFile/'+index+'/'+ (index+count),
                       method : 'GET'
                   }).then(function(response){
-                      console.info(response.data);
+//                      console.info(response.data);
                      success(response.data.lines); 
                   }, function(response){
                       console.error("Failed to fetch lines");
